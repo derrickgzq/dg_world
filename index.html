@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="Derrick Gan - 24 | Data Engineer | Gym and Rohee's no. 1 fan" />
     <meta name="twitter:image" content="derrickgan_profile.jpeg" />
 
-    <link rel="icon" href="output-onlinegiftools.gif" type="gif" />
+    <link rel="icon" href="assets/dumbbell.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,7 +63,9 @@
     <nav
         class="border-b border-gray-200 dark:border-gray-800 sticky top-0 bg-white/80 dark:bg-darkbg/80 backdrop-blur-lg z-50">
         <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-700 dark:text-white tracking-tight">Derrick Gan</h1>
+            <h1 class="text-xl font-bold text-blue-700 dark:text-white tracking-tight">
+                <a href="https://derrickgzq.github.io/dg_world" class="hover:underline">Derrick Gan</a>
+            </h1>
             <div class="hidden md:flex gap-6 text-sm font-medium">
                 <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-300 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Experience</a>
@@ -85,7 +87,7 @@
             <div class="flex flex-col items-center text-center space-y-4">
                 <!-- ✅ Avatar Flip Container -->
                 <div id="avatarCard"
-                    class="relative w-40 h-40 cursor-pointer [perspective:1000px] transform translate-y-2">
+                    class="relative w-40 h-40 cursor-pointer [perspective:1000px] transform translate-y-2 select-none">
                     <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
 
                         <!-- Front: Memoji Video -->
@@ -107,9 +109,15 @@
                 </div>
 
                 <!-- Name & Title -->
-                <h2 class="text-5xl font-bold tracking-tight">Derrick Gan Zheng Qian 颜正谦</h2>
+                <h2 class="text-4xl font-bold tracking-tight">
+                    Derrick Gan Zheng Qian
+                    <span class="block sm:inline">颜正谦</span>
+                </h2>
                 <p class="text-lg font-medium text-blue-700 dark:text-blue-300">
                     Data Engineer at Maybank&nbsp;|&nbsp;Champion of Malaysia Techlympics 2023 Data Science Challenge
+                </p>
+                <p class="text-md font-medium text-blue-300 dark:text-blue-100">
+                    I gym and I'm Rohee's no. 1 fan. And I founded Bursa PalmAI :)
                 </p>
 
                 <!-- Buttons -->
@@ -135,15 +143,6 @@
 
             </div>
 
-            <script>
-                const avatarCard = document.getElementById('avatarCard');
-                const inner = avatarCard.querySelector('div');
-
-                avatarCard.addEventListener('click', () => {
-                    inner.classList.toggle('[transform:rotateY(180deg)]');
-                });
-            </script>
-
             <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-base text-justify">
                     A proud Maybanker since 2023 and champion of the Malaysia Techlympics 2023 Data Science Challenge,
@@ -160,11 +159,15 @@
                     insights for Malaysia’s palm oil sector.
                     <br><br>
                     Based in Kuala Lumpur, I’m passionate about #datascience, #python, #bursamalaysia, and
-                    #machinelearning.
+                    #machinelearning. You may think I am solely a data engineer? I am more beyond that :)
                 </p>
             </div>
+            <p class="text-lg font-medium text-blue-700 dark:text-blue-300">
+                My Personal Projects
+            </p>
             <!-- Project Cards -->
             <div class="grid md:grid-cols-2 gap-6">
+
                 <div
                     class="p-5 rounded-lg bg-[url('bursa_palmai_banner.png')] bg-cover bg-center shadow-soft dark:shadow-softdark relative overflow-hidden">
                     <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div> <!-- Overlay for readability -->
@@ -194,7 +197,6 @@
         <section id="experience">
             <h3 class="text-2xl font-semibold mb-8 tracking-tight">Professional Experience</h3>
 
-            <!-- Maybank -->
             <article class="mb-10 p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
                 <header class="mb-3">
                     <h4 class="text-xl font-semibold">Maybank</h4>
@@ -204,7 +206,8 @@
                 </header>
 
                 <div class="relative border-l border-gray-300 dark:border-gray-700 pl-8 space-y-8">
-                    <!-- Data Engineer -->
+
+                    <!-- ✅ Data Engineer (always shown) -->
                     <div class="relative">
                         <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
                         <h5 class="text-lg font-semibold pl-4">
@@ -219,22 +222,15 @@
                             <li>
                                 <strong>Monthly Mule Detection Model Enhancement</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
-                                    <li>Optimized a mule detection model in production by deploying a Light Gradient
-                                        Boosting Machine (LightGBM) algorithm and incorporating 5+ new behavioral and
-                                        transactional features.</li>
-                                    <li>Achieved 100% accuracy and 99% precision, resulting in a 40% increase in mule
-                                        account alerts, improving fraud detection and compliance response efficiency.
-                                    </li>
+                                    <li>Optimized mule detection model with LightGBM and 5+ new features.</li>
+                                    <li>Achieved 100% accuracy & 99% precision, improving alerts by 40%.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>SP3B Gig Economy Income Assessment</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
-                                    <li>Engineered and automated ETL pipelines to process over 10 million transaction
-                                        records from GIRO and RCMS payment channels.</li>
-                                    <li>Successfully identified about 250,000 potential gig workers, supporting SP3B’s
-                                        strategic launch aimed at expanding financial services access to the gig
-                                        economy, in alignment with Maybank’s financial inclusion mission.</li>
+                                    <li>Engineered ETL for 10M+ transactions from GIRO & RCMS channels.</li>
+                                    <li>Identified 250k potential gig workers, supporting financial inclusion.</li>
                                 </ul>
                             </li>
                         </ol>
@@ -246,11 +242,8 @@
                             <li>
                                 <strong>Kumi Solar Financing Suitability Portal</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
-                                    <li>Developed a fully interactive web-based tool using R Shiny, enabling
-                                        Relationship Managers to search, assess, and download solar financing
-                                        suitability reports.</li>
-                                    <li>Reduced manual processing time by &gt;60%, boosting operational efficiency
-                                        during client engagements.</li>
+                                    <li>Developed interactive R Shiny tool for solar financing assessment.</li>
+                                    <li>Cut manual processing time by &gt;60% during client engagements.</li>
                                 </ul>
                             </li>
                         </ol>
@@ -262,69 +255,70 @@
                             <li>
                                 <strong>GDS ESG Geoportal Enhancement</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
-                                    <li>Enhanced an internal ESG geoportal by integrating Aqueduct water risk data,
-                                        updated rainfall datasets, and biodiversity sensitivity layers across 50+
-                                        financing project sites.</li>
-                                    <li>Supported the Group Sustainability team in improving ESG due diligence and
-                                        mitigated climate-related risk exposure by 25% through enhanced spatial
-                                        insights.</li>
+                                    <li>Integrated water risk, rainfall & biodiversity layers for 50+ sites.</li>
+                                    <li>Improved ESG due diligence, cutting climate risk exposure by 25%.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>SP3 End Financing Geoportal</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
-                                    <li>Developed a REST API service using R’s Plumber framework and automated
-                                        geological assessment report generation with pagedown, powering Maybank’s
-                                        end-financing geoportal.</li>
+                                    <li>Built REST API & automated geological report generation with R.</li>
                                 </ul>
                             </li>
                         </ol>
                     </div>
 
-                    <!-- Transformation Intern -->
-                    <div class="relative">
-                        <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                        <h5 class="text-lg font-semibold pl-4">
-                            Machine Learning Intern, Transformation & Strategy, Group Operations
-                        </h5>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2024 – August 2024</p>
+                    <!-- ✅ Collapsible Roles Toggle -->
+                    <button id="toggleRolesBtn"
+                        class="text-blue-600 dark:text-blue-300 text-sm font-medium flex items-center gap-1 hover:underline focus:outline-none">
+                        <span>Show Other Roles</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
 
-                        <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Fraud / ML Detection
-                            (CDDC
-                            Python Project)</h6>
-                        <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
-                            <li>Established an ensemble-based Machine Learning architecture using random forest and
-                                gradient boosting models to identify suspicious bank accounts.</li>
-                            <li>Integrated Gemini 1.5 Pro as an LLM to provide user-friendly model explanations and
-                                SHAP-based feature insights.</li>
-                        </ul>
+                    <!-- 🟦 Transformation Intern + Student Ambassador (collapsed by default) -->
+                    <div id="collapsibleRoles" class="hidden space-y-8">
 
-                        <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Overseas Units Key
-                            Risk
-                            Indicators (KRI)</h6>
-                        <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
-                            <li>Proposed a set of KRIs using Z-score and IQR statistical distribution methods to detect
-                                anomalous high-value transactions in Maybank’s overseas units.</li>
-                            <li>Developed Power BI and Oracle Analytics dashboards with VBA macros for interactive
-                                visualization of overseas transaction performance.</li>
-                        </ul>
-                    </div>
+                        <!-- Transformation Intern -->
+                        <div class="relative">
+                            <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
+                            <h5 class="text-lg font-semibold pl-4">
+                                Machine Learning Intern, Transformation & Strategy, Group Operations
+                            </h5>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2024 – August 2024
+                            </p>
 
-                    <!-- Student Ambassador / Hackathons -->
-                    <div class="relative">
-                        <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                        <h5 class="text-lg font-semibold pl-4">
-                            Student Ambassador, Maybank Ambassador Programme, Group Human Capital
-                        </h5>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2023 – January 2024</p>
+                            <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Fraud / ML
+                                Detection</h6>
+                            <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
+                                <li>Built ML models (RF & GBM) for suspicious account detection.</li>
+                                <li>Integrated Gemini 1.5 Pro for SHAP-based explanations.</li>
+                            </ul>
 
-                        <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Maybank Hackathon</h6>
-                        <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
-                            <li>Proposed an updated interface design using Figma with inclusive vision-friendly and
-                                hearing-friendly modes.</li>
-                            <li>Suggested Secure2u alert functions for suspicious transactions in the MAE app to enhance
-                                financial inclusion.</li>
-                        </ul>
+                            <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Overseas Units KRI
+                            </h6>
+                            <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
+                                <li>Developed KRIs using Z-score & IQR to detect anomalies.</li>
+                                <li>Built dashboards with Power BI & Oracle Analytics + VBA macros.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Student Ambassador -->
+                        <div class="relative">
+                            <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
+                            <h5 class="text-lg font-semibold pl-4">
+                                Student Ambassador, Maybank Ambassador Programme, Group Human Capital
+                            </h5>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2023 – January 2024
+                            </p>
+
+                            <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Maybank Hackathon
+                            </h6>
+                            <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
+                                <li>Designed inclusive Figma interface (vision/hearing-friendly).</li>
+                                <li>Proposed Secure2u alerts for suspicious transactions in MAE app.</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </article>
@@ -375,7 +369,8 @@
                 </div>
                 <div class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
                     <h4 class="font-semibold">Pre-University (Matriculation)</h4>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">KMNS · 2019 – 2020</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Kolej Matrikulasi Negeri Sembilan · 2019 – 2020
+                    </p>
                     <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
                         Strong emphasis on quantitative methods and problem-solving; prepared for degree-level
                         statistics and data science.
@@ -440,6 +435,13 @@
             </a>
         </div>
         <p>&copy; 2025 Derrick Gan Zheng Qian. All rights reserved.</p>
+        <p>
+            Favicon icon by
+            <a href="https://www.flaticon.com/free-icons/gym" title="gym icons" target="_blank"
+                rel="noopener noreferrer" class="underline hover:text-blue-600">
+                Freepik - Flaticon
+            </a>
+        </p>
     </footer>
 
     <!-- Dark mode toggle -->
@@ -460,7 +462,56 @@
             icon.classList.toggle('fa-sun', isDark);
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
+
+        const avatarCard = document.getElementById('avatarCard');
+        const inner = avatarCard.querySelector('div');
+
+        let isFlipped = false;
+        let startX = 0;
+        let endX = 0;
+
+        // ✅ Click to flip
+        avatarCard.addEventListener('click', () => {
+            isFlipped = !isFlipped;
+            inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
+        });
+
+        // ✅ Drag / Swipe to flip (Desktop + Mobile)
+        avatarCard.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        avatarCard.addEventListener('touchend', e => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        avatarCard.addEventListener('mousedown', e => startX = e.clientX);
+        avatarCard.addEventListener('mouseup', e => {
+            endX = e.clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const deltaX = endX - startX;
+            if (Math.abs(deltaX) > 30) { // 👈 swipe sensitivity
+                isFlipped = !isFlipped;
+                inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
+            }
+        }
+
+        const toggleRolesBtn = document.getElementById('toggleRolesBtn');
+        const collapsible = document.getElementById('collapsibleRoles');
+        const i = toggleRolesBtn.querySelector('i');
+        const text = toggleRolesBtn.querySelector('span');
+
+        toggleRolesBtn.addEventListener('click', () => {
+            collapsible.classList.toggle('hidden');
+            const isOpen = !collapsible.classList.contains('hidden');
+            text.textContent = isOpen ? 'Hide Other Roles' : 'Show Other Roles';
+            i.classList.toggle('fa-chevron-down', !isOpen);
+            i.classList.toggle('fa-chevron-up', isOpen);
+        });
+
     </script>
+
 </body>
 
 </html>
