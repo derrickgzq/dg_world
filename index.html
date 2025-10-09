@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Derrick Gan's World</title>
 
-    <!-- ✅ Open Graph (Facebook / Instagram / WhatsApp) -->
+    <!-- Open Graph (Facebook / Instagram / WhatsApp) -->
     <meta property="og:title" content="Derrick Gan's World" />
     <meta property="og:description" content="Derrick Gan - 24 | Data Engineer | Gym and Rohee's no. 1 fan" />
     <meta property="og:image" content="derrickgan_profile.jpeg" />
     <meta property="og:url" content="https://derrickgzq.github.io/dg_world/" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Twitter / X -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Derrick Gan's World" />
     <meta name="twitter:description" content="Derrick Gan - 24 | Data Engineer | Gym and Rohee's no. 1 fan" />
@@ -22,6 +22,8 @@
     <link rel="icon" href="assets/dumbbell.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -55,6 +57,42 @@
             }
         }
     </script>
+    <style>
+        #coreCarousel {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            transition: transform 0.8s ease-in-out;
+            width: 100%;
+        }
+
+        .core-item {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            opacity: 0.5;
+            transform: scale(0.8);
+            transition: all 0.8s ease-in-out;
+            margin: 0 10px;
+        }
+
+        .core-item.active {
+            opacity: 1;
+            transform: scale(1.4);
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body class="bg-white dark:bg-darkbg text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
@@ -86,13 +124,12 @@
         <section id="about" class="space-y-8">
             <div class="flex flex-col items-center text-center space-y-4">
                 <div class="relative flex items-center justify-center w-full">
-                    <!-- ✅ Avatar Flip Container -->
+                    <!-- Avatar Flip Container -->
                     <div id="avatarCardWrapper"
                         class="relative flex items-center justify-center transition-transform duration-500">
                         <div id="avatarCard" class="relative w-40 h-40 cursor-pointer [perspective:1000px] select-none">
                             <div
                                 class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
-
                                 <!-- Front: Memoji Video -->
                                 <div class="absolute inset-0 [backface-visibility:hidden]">
                                     <video autoplay loop muted playsinline
@@ -100,7 +137,6 @@
                                         <source src="assets/derrickgan_memoji.mp4" type="video/mp4" />
                                     </video>
                                 </div>
-
                                 <!-- Back: Static Headshot -->
                                 <div
                                     class="absolute inset-0 rounded-full [transform:rotateY(180deg)] [backface-visibility:hidden]">
@@ -108,20 +144,17 @@
                                         alt="Derrick Gan headshot"
                                         class="w-full h-full rounded-full border-4 border-blue-600 dark:border-blue-400 object-cover shadow-soft dark:shadow-softdark transition duration-300 hover:scale-110 hover:shadow-lg z-10" />
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
-                    <!-- 📝 Quote Box -->
+                    <!-- Quote Box -->
                     <div id="quoteBox"
                         class="absolute left-1/2 opacity-0 translate-x-0 translate-y-[70px] transition-all duration-500 max-w-[220px] bg-white dark:bg-darkcard border border-blue-200 dark:border-blue-700 rounded-lg shadow-soft dark:shadow-softdark p-3 text-sm text-gray-700 dark:text-gray-300">
                         “Who wins in a fight, the smart one or the crazy one?” The correct answer is the one with all
-                        the money. – Masayoshi Son in
-                        <span class="italic">WeCrashed Apple Originals Series, Episode 8.</span>
+                        the money. – Masayoshi Son in <span class="italic">WeCrashed Apple Originals Series, Episode
+                            8.</span>
                     </div>
                 </div>
-
                 <!-- Name & Title -->
                 <h2 class="text-4xl font-bold tracking-tight">
                     Derrick Gan Zheng Qian
@@ -133,44 +166,33 @@
                 <p class="text-md font-medium text-blue-300 dark:text-blue-100">
                     I gym and I'm Rohee's no. 1 fan. And I founded Bursa PalmAI :)
                 </p>
-
                 <!-- Buttons -->
                 <div class="flex gap-4 pt-2 text-xl">
-                    <!-- Email -->
                     <a href="mailto:ganzhqian123@gmail.com"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
                         <i class="fas fa-envelope"></i>
                     </a>
-
-                    <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/ganzhengqian" target="_blank"
                         class="flex items-center justify-center w-10 h-10 rounded-full border border-blue-600 dark:border-blue-300 text-blue-600 dark:text-blue-300 hover:bg-blue-600 hover:text-white transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-
-                    <!-- GitHub -->
                     <a href="https://github.com/derrickgzq" target="_blank"
                         class="flex items-center justify-center w-10 h-10 rounded-full border border-blue-600 dark:border-blue-300 text-blue-600 dark:text-blue-300 hover:bg-blue-600 hover:text-white transition">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
-
             </div>
-
             <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-base text-justify">
-                    A proud Maybanker since 2023 and champion of the Malaysia Techlympics 2023 Data Science Challenge,
-                    I work as a Data Engineer at Malaysia’s largest bank. With a background in Statistics, I specialize
-                    in
+                    A proud Maybanker since 2023 and champion of the Malaysia Techlympics 2023 Data Science Challenge, I
+                    work as a Data Engineer at Malaysia’s largest bank. With a background in Statistics, I specialize in
                     data engineering and analytics — from building pipelines and data lakes to delivering solutions with
                     real business impact.
                     <br><br>
                     My journey began with analytics and machine learning for fraud detection, later expanding into
-                    full-stack
-                    development using R Shiny, FastAPI, JavaScript, and Python. I’m also building
+                    full-stack development using R Shiny, FastAPI, JavaScript, and Python. I’m also building
                     <strong>Bursa PalmAI</strong>, an AI-powered dashboard unifying financial, commodity, and
-                    operational
-                    insights for Malaysia’s palm oil sector.
+                    operational insights for Malaysia’s palm oil sector.
                     <br><br>
                     Based in Kuala Lumpur, I’m passionate about #datascience, #python, #bursamalaysia, and
                     #machinelearning. You may think I am solely a data engineer? I am more beyond that :)
@@ -181,11 +203,10 @@
             </p>
             <!-- Project Cards -->
             <div class="grid md:grid-cols-2 gap-6">
-
                 <div
                     class="p-5 rounded-lg bg-[url('bursa_palmai_banner.png')] bg-cover bg-center shadow-soft dark:shadow-softdark relative overflow-hidden">
-                    <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div> <!-- Overlay for readability -->
-                    <div class="relative z-10"> <!-- Content wrapper to ensure text is above overlay -->
+                    <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div>
+                    <div class="relative z-10">
                         <h4 class="font-semibold mb-2 text-gray-100 dark:text-gray-100">Bursa PalmAI</h4>
                         <p class="text-base text-gray-200 dark:text-gray-200 mb-3">
                             An AI-enhanced dashboard monitoring Malaysia’s palm oil sector, integrating financial,
@@ -207,107 +228,80 @@
             </div>
         </section>
 
-        <!-- Experience (company-focused, nested roles) -->
+        <!-- Experience -->
         <section id="experience">
             <h3 class="text-2xl font-semibold mb-8 tracking-tight">Professional Experience</h3>
-
             <article class="mb-10 p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
                 <header class="mb-3">
                     <h4 class="text-xl font-semibold">Maybank</h4>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                        2023 – Present · Kuala Lumpur, Malaysia
-                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">2023 – Present · Kuala Lumpur, Malaysia</p>
                 </header>
-
                 <div class="relative border-l border-gray-300 dark:border-gray-700 pl-8 space-y-8">
-
-                    <!-- ✅ Data Engineer (always shown) -->
                     <div class="relative">
                         <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                        <h5 class="text-lg font-semibold pl-4">
-                            Data Engineer, Group Data & Analytics, Group Strategy & Innovation
-                        </h5>
+                        <h5 class="text-lg font-semibold pl-4">Data Engineer, Group Data & Analytics, Group Strategy &
+                            Innovation</h5>
                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">September 2024 – Present</p>
-
-                        <!-- Analytics & Reporting -->
                         <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Analytics & Reporting
                         </h6>
                         <ol class="list-decimal pl-9 space-y-3 text-base text-gray-700 dark:text-gray-300">
-                            <li>
-                                <strong>Monthly Mule Detection Model Enhancement</strong>
+                            <li><strong>Monthly Mule Detection Model Enhancement</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
                                     <li>Optimized mule detection model with LightGBM and 5+ new features.</li>
                                     <li>Achieved 100% accuracy & 99% precision, improving alerts by 40%.</li>
                                 </ul>
                             </li>
-                            <li>
-                                <strong>SP3B Gig Economy Income Assessment</strong>
+                            <li><strong>SP3B Gig Economy Income Assessment</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
                                     <li>Engineered ETL for 10M+ transactions from GIRO & RCMS channels.</li>
                                     <li>Identified 250k potential gig workers, supporting financial inclusion.</li>
                                 </ul>
                             </li>
                         </ol>
-
-                        <!-- Automation & Tool Development -->
                         <h6 class="font-semibold mt-6 mb-2 text-blue-700 dark:text-blue-300 pl-4">Automation & Tool
                             Development</h6>
                         <ol class="list-decimal pl-9 space-y-3 text-base text-gray-700 dark:text-gray-300">
-                            <li>
-                                <strong>Kumi Solar Financing Suitability Portal</strong>
+                            <li><strong>Kumi Solar Financing Suitability Portal</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
                                     <li>Developed interactive R Shiny tool for solar financing assessment.</li>
                                     <li>Cut manual processing time by &gt;60% during client engagements.</li>
                                 </ul>
                             </li>
                         </ol>
-
-                        <!-- Application & Solution Development -->
                         <h6 class="font-semibold mt-6 mb-2 text-blue-700 dark:text-blue-300 pl-4">Application & Solution
                             Development</h6>
                         <ol class="list-decimal pl-9 space-y-3 text-base text-gray-700 dark:text-gray-300">
-                            <li>
-                                <strong>GDS ESG Geoportal Enhancement</strong>
+                            <li><strong>GDS ESG Geoportal Enhancement</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
                                     <li>Integrated water risk, rainfall & biodiversity layers for 50+ sites.</li>
                                     <li>Improved ESG due diligence, cutting climate risk exposure by 25%.</li>
                                 </ul>
                             </li>
-                            <li>
-                                <strong>SP3 End Financing Geoportal</strong>
+                            <li><strong>SP3 End Financing Geoportal</strong>
                                 <ul class="list-disc pl-5 mt-1 space-y-1">
                                     <li>Built REST API & automated geological report generation with R.</li>
                                 </ul>
                             </li>
                         </ol>
                     </div>
-
-                    <!-- ✅ Collapsible Roles Toggle -->
                     <button id="toggleRolesBtn"
                         class="text-blue-600 dark:text-blue-300 text-sm font-medium flex items-center gap-1 hover:underline focus:outline-none">
                         <span>Show Other Roles</span>
                         <i class="fas fa-chevron-down text-xs"></i>
                     </button>
-
-                    <!-- 🟦 Transformation Intern + Student Ambassador (collapsed by default) -->
                     <div id="collapsibleRoles" class="hidden space-y-8">
-
-                        <!-- Transformation Intern -->
                         <div class="relative">
                             <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                            <h5 class="text-lg font-semibold pl-4">
-                                Machine Learning Intern, Transformation & Strategy, Group Operations
-                            </h5>
+                            <h5 class="text-lg font-semibold pl-4">Machine Learning Intern, Transformation & Strategy,
+                                Group Operations</h5>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2024 – August 2024
                             </p>
-
                             <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Fraud / ML
                                 Detection</h6>
                             <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
                                 <li>Built ML models (RF & GBM) for suspicious account detection.</li>
                                 <li>Integrated Gemini 1.5 Pro for SHAP-based explanations.</li>
                             </ul>
-
                             <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Overseas Units KRI
                             </h6>
                             <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
@@ -315,16 +309,12 @@
                                 <li>Built dashboards with Power BI & Oracle Analytics + VBA macros.</li>
                             </ul>
                         </div>
-
-                        <!-- Student Ambassador -->
                         <div class="relative">
                             <div class="absolute -left-[9px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                            <h5 class="text-lg font-semibold pl-4">
-                                Student Ambassador, Maybank Ambassador Programme, Group Human Capital
-                            </h5>
+                            <h5 class="text-lg font-semibold pl-4">Student Ambassador, Maybank Ambassador Programme,
+                                Group Human Capital</h5>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 pl-4">February 2023 – January 2024
                             </p>
-
                             <h6 class="font-semibold mt-4 mb-2 text-blue-700 dark:text-blue-300 pl-4">Maybank Hackathon
                             </h6>
                             <ul class="list-disc pl-9 space-y-1 text-base text-gray-700 dark:text-gray-300">
@@ -332,12 +322,9 @@
                                 <li>Proposed Secure2u alerts for suspicious transactions in MAE app.</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </article>
-
-            <!-- Malaysia Techlympics -->
             <article class="mb-10 p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
                 <header class="mb-3">
                     <h4 class="text-xl font-semibold">Malaysia Techlympics</h4>
@@ -346,12 +333,9 @@
                 <p class="text-base text-gray-700 dark:text-gray-300">
                     Champion, Data Science Challenge. Built an end-to-end analytical workflow—from data preparation and
                     modeling to insight communication—demonstrating practical, high-impact applications of machine
-                    learning to
-                    real-world datasets.
+                    learning to real-world datasets.
                 </p>
             </article>
-
-            <!-- University & Other Engagements -->
             <article class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
                 <header class="mb-3">
                     <h4 class="text-xl font-semibold">University & Community</h4>
@@ -360,10 +344,8 @@
                 <p class="text-base text-gray-700 dark:text-gray-300">
                     At Universiti Kebangsaan Malaysia (UKM), I studied Statistics and developed a strong foundation in
                     econometrics and applied analytics. I’ve contributed to student communities, hackathons, and open
-                    data
-                    initiatives, and continue to explore ways to combine geospatial analysis, financial modeling, and AI
-                    to
-                    solve sector-specific problems.
+                    data initiatives, and continue to explore ways to combine geospatial analysis, financial modeling,
+                    and AI to solve sector-specific problems.
                 </p>
             </article>
         </section>
@@ -395,37 +377,87 @@
 
         <!-- Skills -->
         <section id="skills">
-            <h3 class="text-2xl font-semibold mb-8 tracking-tight">Skills</h3>
+            <h3 class="text-2xl font-semibold mb-8 tracking-tight">Tech Stack</h3>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                    <h4 class="font-semibold mb-2">Core</h4>
-                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 dark:text-gray-300">
-                        <span>Python (Pandas, NumPy, scikit-learn)</span>
-                        <span>SQL (Teradata, SQLite)</span>
-                        <span>Data Pipelines & ETL</span>
-                        <span>R Shiny</span>
-                        <span>FastAPI</span>
-                        <span>Geocoding & Geospatial</span>
+                <div
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark overflow-hidden relative">
+                    <h4 class="font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-code text-blue-600"></i> Core
+                    </h4>
+                    <div class="carousel-container">
+                        <div id="coreCarousel" class="flex items-center">
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-python-plain text-5xl text-blue-600"></i>
+                                <span class="text-sm mt-1">Python</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <img src="r_logo.png" alt="R Logo"
+                                    class="w-14 h-14 object-contain transition-transform duration-300" />
+                                <span class="text-sm mt-1">R</span>
+                            </div>
+
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-mysql-plain text-5xl text-[#00758F]"></i>
+                                <span class="text-sm mt-1">SQL</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-javascript-plain text-5xl text-yellow-500"></i>
+                                <span class="text-sm mt-1">JavaScript</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-html5-plain text-5xl text-orange-500"></i>
+                                <span class="text-sm mt-1">HTML</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-css3-plain text-5xl text-blue-500"></i>
+                                <span class="text-sm mt-1">CSS</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-fastapi-plain text-5xl text-green-600"></i>
+                                <span class="text-sm mt-1">FastAPI</span>
+                            </div>
+                            <div class="core-item flex flex-col items-center transition-all duration-800">
+                                <i class="devicon-react-original text-5xl text-cyan-400"></i>
+                                <span class="text-sm mt-1">React</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                    <h4 class="font-semibold mb-2">Tooling & Analytics</h4>
-                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 dark:text-gray-300">
-                        <span>Dataiku DSS</span>
-                        <span>Power BI</span>
-                        <span>Oracle Analytics</span>
-                        <span>Model Monitoring</span>
-                        <span>Explainability (SHAP)</span>
-                        <span>Visualization</span>
+                    <h4 class="font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-cubes text-blue-600"></i> Tools Stack
+                    </h4>
+                    <div class="space-y-5 text-base text-gray-700 dark:text-gray-300">
+                        <div>
+                            <h5 class="font-medium text-blue-700 dark:text-blue-300 mb-1">Data & ETL</h5>
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <span>Dataiku DSS</span>
+                                <span>Teradata SQL</span>
+                                <span>Hadoop SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="font-medium text-blue-700 dark:text-blue-300 mb-1">Visualization</h5>
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <span>Power BI</span>
+                                <span>Plotly</span>
+                                <span>UI Shadcn</span>
+                                <span>Vis.js</span>
+                                <span>Mapbox / Leaflet</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="font-medium text-blue-700 dark:text-blue-300 mb-1">AI / ML & Analytics</h5>
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <span>HuggingFace</span>
+                                <span>PyCaret</span>
+                                <span>OpenRouter</span>
+                                <span>AIX360</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h4 class="font-semibold mt-8 mb-3">Certifications & Recognition</h4>
-            <ul class="list-disc pl-5 space-y-1 text-base text-gray-700 dark:text-gray-300">
-                <li>Data Analysis with Python</li>
-                <li>Intermediate Machine Learning</li>
-                <li>Malaysia Techlympics — Data Science Challenge (Champion)</li>
-            </ul>
         </section>
     </main>
 
@@ -458,13 +490,13 @@
         </p>
     </footer>
 
-    <!-- Dark mode toggle -->
+    <!-- Scripts -->
     <script>
         const toggleBtn = document.getElementById('themeToggle');
         const icon = document.getElementById('themeIcon');
         const html = document.documentElement;
 
-        // 🌗 Theme toggle
+        // Theme toggle
         if (localStorage.getItem('theme') === 'dark') {
             html.classList.add('dark');
             icon.classList.replace('fa-moon', 'fa-sun');
@@ -478,7 +510,7 @@
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
 
-        // 🔄 Avatar flip (click + drag)
+        // Avatar flip (click + drag)
         const avatarCard = document.getElementById('avatarCard');
         const inner = avatarCard.querySelector('div');
 
@@ -486,13 +518,11 @@
         let startX = 0;
         let endX = 0;
 
-        // ✅ Click to flip
         avatarCard.addEventListener('click', () => {
             isFlipped = !isFlipped;
             inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
         });
 
-        // ✅ Drag / Swipe to flip (Desktop + Mobile)
         avatarCard.addEventListener('touchstart', e => startX = e.touches[0].clientX);
         avatarCard.addEventListener('touchend', e => {
             endX = e.changedTouches[0].clientX;
@@ -507,13 +537,13 @@
 
         function handleSwipe() {
             const deltaX = endX - startX;
-            if (Math.abs(deltaX) > 30) { // 👈 swipe sensitivity
+            if (Math.abs(deltaX) > 30) {
                 isFlipped = !isFlipped;
                 inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
             }
         }
 
-        // 👔 Toggle Other Roles
+        // Toggle Other Roles
         const toggleRolesBtn = document.getElementById('toggleRolesBtn');
         const collapsible = document.getElementById('collapsibleRoles');
         const i = toggleRolesBtn.querySelector('i');
@@ -527,7 +557,7 @@
             i.classList.toggle('fa-chevron-up', isOpen);
         });
 
-        // 📝 Avatar hold to reveal quote
+        // Avatar hold to reveal quote
         const avatarWrapper = document.getElementById('avatarCardWrapper');
         const quoteBox = document.getElementById('quoteBox');
         let holdTimer = null;
@@ -549,7 +579,6 @@
             }
         }
 
-        // 🖱️ Desktop hold
         avatarWrapper.addEventListener('mousedown', () => {
             holdTimer = setTimeout(showQuote, 500);
         });
@@ -564,7 +593,6 @@
             hideQuote();
         });
 
-        // 📱 Mobile hold
         avatarWrapper.addEventListener('touchstart', () => {
             holdTimer = setTimeout(showQuote, 500);
         });
@@ -573,8 +601,56 @@
             clearTimeout(holdTimer);
             hideQuote();
         });
-    </script>
 
+        // Carousel logic
+        const carousel = document.getElementById("coreCarousel");
+        const items = document.querySelectorAll(".core-item");
+        const totalItems = items.length;
+        const itemWidth = 110; // 80px width + 15px margin * 2
+
+        // Clone items for infinite loop
+        const cloneCount = totalItems; // Clone all items once
+        const clonedItems = Array.from(items).map(item => item.cloneNode(true));
+        clonedItems.forEach(clone => carousel.appendChild(clone));
+
+        // Update total items to include clones
+        const totalItemsWithClones = totalItems * 2;
+
+        let index = 0;
+
+        function updateCarousel() {
+            // Remove active class from all items
+            document.querySelectorAll(".core-item").forEach(item => item.classList.remove("active"));
+
+            // Calculate the centered index (modulo to handle clones)
+            const centerIndex = index % totalItems;
+            document.querySelectorAll(".core-item")[centerIndex].classList.add("active");
+
+            // Calculate offset to center the active item
+            const containerWidth = carousel.parentElement.offsetWidth;
+            const offset = (containerWidth / 2) - (itemWidth / 2) - (centerIndex * itemWidth);
+            carousel.style.transition = 'transform 0.8s ease-in-out';
+            carousel.style.transform = `translateX(${offset}px)`;
+
+            // Increment index
+            index++;
+
+            // Reset to start seamlessly when reaching the cloned set
+            if (index >= totalItems) {
+                setTimeout(() => {
+                    carousel.style.transition = 'none'; // Disable transition for reset
+                    carousel.style.transform = `translateX(${(containerWidth / 2) - (itemWidth / 2)}px)`;
+                    index = 0; // Reset index to start
+                    // Re-query items to ensure clones are included
+                    document.querySelectorAll(".core-item")[centerIndex].classList.add("active");
+                }, 800); // Match transition duration
+            }
+        }
+
+        // Start the carousel
+        updateCarousel();
+        setInterval(updateCarousel, 2500);
+    </script>
 </body>
 
 </html>
