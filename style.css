@@ -47,3 +47,22 @@
     padding: 20px 0;
     box-shadow: none;
 }
+
+#awardsCarousel::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for WebKit browsers */
+}
+
+#awardsCarousel {
+    scroll-behavior: smooth;
+    /* Smooth scrolling for snap */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    touch-action: pan-x;
+    /* Restrict touch to horizontal scrolling */
+}
+
+.snap-center {
+    scroll-snap-align: center;
+    /* Ensure cards snap to center */
+}

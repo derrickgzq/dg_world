@@ -107,7 +107,7 @@
             <div class="hidden md:flex gap-6 text-sm font-medium">
                 <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-300 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Experience</a>
-                <a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Projects &
+                <a href="#awards" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Projects &
                     Awards</a>
                 <a href="#education" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Education</a>
                 <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-300 transition">Skills</a>
@@ -149,11 +149,13 @@
                     </div>
                     <!-- Quote Box -->
                     <div id="quoteBox"
-                        class="absolute left-1/2 opacity-0 translate-x-0 translate-y-[70px] transition-all duration-500 max-w-[220px] bg-white dark:bg-darkcard border border-blue-200 dark:border-blue-700 rounded-lg shadow-soft dark:shadow-softdark p-3 text-sm text-gray-700 dark:text-gray-300">
+                        class="absolute top-1/2 left-1/2 opacity-0 -translate-y-1/2 transition-all duration-500 max-w-[260px] bg-white dark:bg-darkcard border border-blue-200 dark:border-blue-700 rounded-lg shadow-soft dark:shadow-softdark p-3 text-sm text-gray-700 dark:text-gray-300"
+                        style="transform: translate(80px, -50%);">
                         “Who wins in a fight, the smart one or the crazy one?” The correct answer is the one with all
                         the money. – Masayoshi Son in <span class="italic">WeCrashed Apple Originals Series, Episode
                             8.</span>
                     </div>
+
                 </div>
                 <!-- Name & Title -->
                 <h2 class="text-4xl font-bold tracking-tight">
@@ -209,21 +211,26 @@
                     <div class="relative z-10">
                         <h4 class="font-semibold mb-2 text-gray-100 dark:text-gray-100">Bursa PalmAI</h4>
                         <p class="text-base text-gray-200 dark:text-gray-200 mb-3">
-                            An AI-enhanced dashboard monitoring Malaysia’s palm oil sector, integrating financial,
-                            commodity, and operational data for real-time insights.
+                            An AI and data science powered Bursa Malaysia Palm Oil Intelligence Hub.
                         </p>
                         <a href="https://bursa-palmai.onrender.com" target="_blank"
                             class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700 transition">View
                             App</a>
                     </div>
                 </div>
-                <div class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                    <h4 class="font-semibold mb-2">Digital Twin</h4>
-                    <p class="text-base text-gray-700 dark:text-gray-300 mb-3">
-                        A digital replica of myself with various metrics of vitals, financials and sanity.
-                    </p>
-                    <button class="inline-block bg-gray-400 text-white px-4 py-2 rounded-md text-sm cursor-not-allowed"
-                        disabled>Coming Soon</button>
+                <div
+                    class="p-5 rounded-lg bg-[url('digital_twin_banner.png')] bg-cover bg-center shadow-soft dark:shadow-softdark relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div>
+                    <div class="relative z-10">
+                        <h4 class="font-semibold mb-2 text-gray-100 dark:text-gray-100">Digital Twin</h4>
+                        <p class="text-base text-gray-200 dark:text-gray-200 mb-3">
+                            A digital self replica with vitals of financial health and mental clarity through
+                            intelligent metrics.
+                        </p>
+                        <a href="" target="_blank"
+                            class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700 transition">Coming
+                            Soon</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -232,9 +239,12 @@
         <section id="experience">
             <h3 class="text-2xl font-semibold mb-8 tracking-tight">Professional Experience</h3>
             <article class="mb-10 p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                <header class="mb-3">
-                    <h4 class="text-xl font-semibold">Maybank</h4>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">2023 – Present · Kuala Lumpur, Malaysia</p>
+                <header class="mb-3 flex items-center gap-3">
+                    <img src="assets/maybank_logo.jpeg" alt="Maybank Logo" class="w-10 h-10">
+                    <div>
+                        <h4 class="text-xl font-semibold">Maybank</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">2023 – Present · Kuala Lumpur, Malaysia</p>
+                    </div>
                 </header>
                 <div class="relative border-l border-gray-300 dark:border-gray-700 pl-8 space-y-8">
                     <div class="relative">
@@ -325,29 +335,195 @@
                     </div>
                 </div>
             </article>
-            <article class="mb-10 p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                <header class="mb-3">
-                    <h4 class="text-xl font-semibold">Malaysia Techlympics</h4>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">2023</p>
-                </header>
-                <p class="text-base text-gray-700 dark:text-gray-300">
-                    Champion, Data Science Challenge. Built an end-to-end analytical workflow—from data preparation and
-                    modeling to insight communication—demonstrating practical, high-impact applications of machine
-                    learning to real-world datasets.
-                </p>
-            </article>
+
             <article class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark">
-                <header class="mb-3">
-                    <h4 class="text-xl font-semibold">University & Community</h4>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Ongoing</p>
+                <header class="mb-3 flex items-center gap-3">
+                    <img src="assets\investing_note_pte_ltd_logo.jpeg" alt="InvestingNote Logo" class="w-10 h-10">
+                    <div>
+                        <h4 class="text-xl font-semibold">InvestingNote Malaysia</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">May 2022 – Aug 2022 · 4 mos · Selangor,
+                            Malaysia</p>
+                    </div>
                 </header>
-                <p class="text-base text-gray-700 dark:text-gray-300">
-                    At Universiti Kebangsaan Malaysia (UKM), I studied Statistics and developed a strong foundation in
-                    econometrics and applied analytics. I’ve contributed to student communities, hackathons, and open
-                    data initiatives, and continue to explore ways to combine geospatial analysis, financial modeling,
-                    and AI to solve sector-specific problems.
-                </p>
+                <h5 class="text-lg font-semibold mb-2 pl-4">Student Ambassador</h5>
+                <ul class="list-disc pl-9 space-y-2 text-base text-gray-700 dark:text-gray-300">
+                    <li>
+                        Pitched a Bursa-listed company, <strong>Yenher Holdings Berhad</strong> for buy call
+                        recommendation using Time Series Linear Model forecasted earnings.
+                    </li>
+                    <li>
+                        Issued a buy call on Yenher with a 38% upside of target price determined with forward PE
+                        valuation method.
+                    </li>
+                </ul>
+                <div class="pl-9 pt-2 text-sm text-gray-500 dark:text-gray-400">
+                    <span>Skills:</span> Time Series Forecasting, Equity Trading, +1 more
+                </div>
             </article>
+
+        </section>
+
+        <!-- Awards and Recognitions -->
+        <section id="awards">
+            <h3 class="text-2xl font-semibold mb-8 tracking-tight">Awards & Recognitions</h3>
+
+            <div class="flex overflow-x-auto space-x-6 snap-x snap-mandatory select-none"
+                style="scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: smooth;" id="awardsCarousel">
+                <!-- Malaysia Techlympics -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Malaysia Techlympics Data
+                            Science Challenge</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Nov 2023</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Ministry of Science, Technology
+                        and Innovation (MOSTI)</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥇 Champion, Data Science Challenge — integrated Granger-Causality Tests on CPI and PPI in
+                        Malaysia and state context to find causality between pairing variables and proposed relevant
+                        economics policies to curb hyperinflation.
+                    </p>
+                </article>
+
+                <!-- MDIT x DOSM Datathon -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">MDIT × DOSM Datathon</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Sep 2023</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Department of Statistics
+                        Malaysia (DOSM)</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥉 Third Runner-Up — Established a Machine Learning based diabetes classification model with
+                        accuracy of 90% to sign early warnings of diabetes and proposed comprehensive flow of MLOps for
+                        model deployment.
+                    </p>
+                </article>
+
+                <!-- SME Bank Sandbox Challenge -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">SME Bank Sandbox Challenge
+                        </h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Aug 2023</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by SME Bank Malaysia</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🎯 Finalist — Developed a mobile and web application prototype for proper medicine disposals to
+                        align with SDG 12 - Responsible Consumption and Production.
+                    </p>
+                </article>
+
+                <!-- Data Challenge Competition 2023 -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Data Challenge Competition
+                        </h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">May 2023</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by National University of Malaysia
+                        (UKM)</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥇 Champion — analyzed Malaysia’s diabetic demographics and built a neural network
+                        classification model for early diabetes detection using MLOps.
+                    </p>
+                </article>
+
+                <!-- UKM Statistics Infographic Competition -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">UKM Statistics Infographic
+                            Competition</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Dec 2022</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Statistics Club, UKM</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥈 First Runner-Up — created an infographic summarizing the UKM Statistics program through a
+                        visually engaging data story.
+                    </p>
+                </article>
+
+                <!-- InvestingNote Student Ambassador -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">InvestingNote Student
+                            Ambassador of the Week</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Aug 2022</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by InvestingNote Malaysia</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        💡 Recognized for active leadership and contribution to the InvestingNote student financial
+                        literacy community.
+                    </p>
+                </article>
+
+                <!-- InvestingNote Stock Pitch Competition -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">InvestingNote Stock Pitch
+                            Competition</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Jul 2022</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by InvestingNote Malaysia</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥈 First Runner-Up — pitched Yenher Holdings Berhad with valuation via Forward P/E method and
+                        business outlook analysis.
+                    </p>
+                </article>
+
+                <!-- Data Challenge Competition 2022 -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Data Challenge Competition
+                        </h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Jun 2022</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Statistics Club, UKM</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🥈 1st Runner-Up — applied statistical modeling and predictive analytics for real-world
+                        datasets.
+                    </p>
+                </article>
+
+                <!-- Dean’s Award -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Dean’s Award, Faculty of
+                            Science & Technology</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">May 2022</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Universiti Kebangsaan Malaysia
+                        (UKM)</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🏅 Academic excellence recognition for top performance during 2020–2021 academic session.
+                    </p>
+                </article>
+
+                <!-- Red Crescent Merit Award -->
+                <article
+                    class="p-5 rounded-lg bg-lightgray dark:bg-darkcard shadow-soft dark:shadow-softdark flex-none w-80 snap-center">
+                    <header class="mb-2 flex justify-between items-center">
+                        <h4 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Red Crescent Youth Merit
+                            Award</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Dec 2018</p>
+                    </header>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">Issued by Malaysian Red Crescent Society
+                        (MRCS)</p>
+                    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">
+                        🩸 Recognized for humanitarian service and exemplary leadership in community emergency response
+                        programs.
+                    </p>
+                </article>
+            </div>
         </section>
 
         <!-- Education -->
@@ -515,7 +691,7 @@
         const inner = avatarCard.querySelector('div');
 
         let isFlipped = false;
-        let startX = 0;
+        let startXa = 0;
         let endX = 0;
 
         avatarCard.addEventListener('click', () => {
@@ -523,20 +699,20 @@
             inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
         });
 
-        avatarCard.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        avatarCard.addEventListener('touchstart', e => startXa = e.touches[0].clientX);
         avatarCard.addEventListener('touchend', e => {
             endX = e.changedTouches[0].clientX;
             handleSwipe();
         });
 
-        avatarCard.addEventListener('mousedown', e => startX = e.clientX);
+        avatarCard.addEventListener('mousedown', e => startXa = e.clientX);
         avatarCard.addEventListener('mouseup', e => {
             endX = e.clientX;
             handleSwipe();
         });
 
         function handleSwipe() {
-            const deltaX = endX - startX;
+            const deltaX = endX - startXa;
             if (Math.abs(deltaX) > 30) {
                 isFlipped = !isFlipped;
                 inner.classList.toggle('[transform:rotateY(180deg)]', isFlipped);
@@ -567,14 +743,14 @@
             isHolding = true;
             avatarWrapper.style.transform = 'translateX(-120px)';
             quoteBox.style.opacity = '1';
-            quoteBox.style.transform = 'translate(80px, 70px)';
+            quoteBox.style.transform = 'translate(80px, -50%)';
         }
 
         function hideQuote() {
             if (isHolding) {
                 avatarWrapper.style.transform = 'translateX(0px)';
                 quoteBox.style.opacity = '0';
-                quoteBox.style.transform = 'translateX(0px)';
+                quoteBox.style.transform = 'translate(0px, -50%)';
                 isHolding = false;
             }
         }
@@ -650,6 +826,118 @@
         // Start the carousel
         updateCarousel();
         setInterval(updateCarousel, 2500);
+
+        // Drag-to-scroll with inertia for awards carousel
+        const awardsCarousel = document.getElementById('awardsCarousel');
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        let velocity = 0;
+        let lastX;
+        let lastTime;
+        let animationFrame;
+
+        // Start dragging
+        awardsCarousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - awardsCarousel.offsetLeft;
+            scrollLeft = awardsCarousel.scrollLeft;
+            lastX = startX;
+            lastTime = performance.now();
+            velocity = 0;
+            cancelAnimationFrame(animationFrame); // Stop any ongoing inertia
+            awardsCarousel.style.cursor = 'grabbing';
+        });
+
+        // End dragging
+        awardsCarousel.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                awardsCarousel.style.cursor = 'grab';
+                applyInertia();
+            }
+        });
+
+        awardsCarousel.addEventListener('mouseleave', () => {
+            if (isDragging) {
+                isDragging = false;
+                awardsCarousel.style.cursor = 'grab';
+                applyInertia();
+            }
+        });
+
+        // Drag movement
+        awardsCarousel.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - awardsCarousel.offsetLeft;
+            const walk = (x - startX) * 1.2; // Slight multiplier for responsiveness
+            awardsCarousel.scrollLeft = scrollLeft - walk;
+
+            // Calculate velocity for inertia
+            const currentTime = performance.now();
+            const deltaTime = (currentTime - lastTime) / 1000; // Convert to seconds
+            const deltaX = x - lastX;
+            velocity = deltaX / deltaTime; // Pixels per second
+            lastX = x;
+            lastTime = currentTime;
+        });
+
+        // Touch support
+        awardsCarousel.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX - awardsCarousel.offsetLeft;
+            scrollLeft = awardsCarousel.scrollLeft;
+            lastX = startX;
+            lastTime = performance.now();
+            velocity = 0;
+            cancelAnimationFrame(animationFrame);
+        });
+
+        awardsCarousel.addEventListener('touchend', () => {
+            if (isDragging) {
+                isDragging = false;
+                applyInertia();
+            }
+        });
+
+        awardsCarousel.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const x = e.touches[0].pageX - awardsCarousel.offsetLeft;
+            const walk = (x - startX) * 1.2; // Same multiplier for touch
+            awardsCarousel.scrollLeft = scrollLeft - walk;
+
+            // Calculate velocity for inertia
+            const currentTime = performance.now();
+            const deltaTime = (currentTime - lastTime) / 1000;
+            const deltaX = x - lastX;
+            velocity = deltaX / deltaTime;
+            lastX = x;
+            lastTime = currentTime;
+        });
+
+        // Inertia scrolling
+        function applyInertia() {
+            if (Math.abs(velocity) < 20) return; // Lowered threshold for inertia
+            const friction = 0.97; // Increased for slower decay, smoother glide
+            let currentScroll = awardsCarousel.scrollLeft;
+
+            function animate() {
+                currentScroll -= velocity * 0.016; // Update scroll based on velocity (60fps)
+                awardsCarousel.scrollLeft = currentScroll;
+                velocity *= friction; // Apply friction to reduce velocity
+
+                // Stop animation when velocity is low or at scroll boundaries
+                if (Math.abs(velocity) < 0.5 || currentScroll <= 0 || currentScroll >= awardsCarousel.scrollWidth - awardsCarousel.clientWidth) {
+                    cancelAnimationFrame(animationFrame);
+                    return;
+                }
+
+                animationFrame = requestAnimationFrame(animate);
+            }
+
+            animationFrame = requestAnimationFrame(animate);
+        }
     </script>
 </body>
 
